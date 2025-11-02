@@ -1,0 +1,482 @@
+{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 \fmodern Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel0 \b \fs36 Google Ads API Standard Access Application\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Design Documentation for WeaveAI Enterprise\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Company Name:} WeaveAI / Green Signals {\b Business Model:} Marketing Performance Analytics & Reporting Platform {\b Application Date:} November 2, 2025 {\b Developer Token:} swQQBb1hPh8Ofid5fnDgjg {\b MCC Customer ID:} 517-565-4322\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Executive Summary\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 WeaveAI Enterprise is an internal-use marketing analytics platform designed to aggregate and visualize campaign performance data across multiple marketing channels (Google Ads, Meta Ads, LinkedIn Ads) for our managed client accounts. The platform provides unified dashboards, automated reporting, and AI-powered insights to help our internal marketing team optimize campaign performance across multiple client accounts managed under our MCC structure.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Tool Classification:} Internal-Only Reporting Tool with Management Capabilities\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Primary Use Cases:} 1. Aggregate campaign performance metrics across multiple client accounts under our MCC 2. Generate automated performance reports and dashboards for internal review 3. Sync campaign status with inventory availability (pause/enable ads based on stock) 4. Monitor budget pacing and ROI across campaigns 5. AI-powered chat interface for querying campaign data\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Business Model & Use Case\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Company Overview\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b WeaveAI / Green Signals} operates as a marketing services company managing Google Ads campaigns for multiple landscape and outdoor living clients, including: - Stewart Golf - GS Gardens (Green Signals Gardens) - Forever Green Landscapes - Additional landscaping and outdoor service companies\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 We manage all advertising through our Google Ads MCC account (517-565-4322) and require API access to: - Pull performance data into our internal analytics platform - Automate reporting for internal marketing team review - Synchronize campaign status with client inventory systems - Provide unified cross-channel performance dashboards\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Tool Access & Users\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Internal Users Only:} - Marketing team members (5-10 users) - Account managers reviewing client performance - Executive team viewing performance summaries\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b No External Access:} - Clients do NOT access the tool directly - Reports are generated internally and shared via email/PDF - All API access is strictly for internal data aggregation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Data Flow Architecture\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?\line
+\u9474 ?         Google Ads MCC (517-565-4322)           \u9474 ?\line
+\u9474 ?                                                  \u9474 ?\line
+\u9474 ?  \u9500 ?\u9472 ?\u9472 ? Stewart Golf (Client Account)              \u9474 ?\line
+\u9474 ?  \u9500 ?\u9472 ?\u9472 ? GS Gardens (Client Account)                \u9474 ?\line
+\u9474 ?  \u9500 ?\u9472 ?\u9472 ? Forever Green (Client Account)             \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ? ... (Additional Client Accounts)           \u9474 ?\line
+\u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9516 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?\line
+                \u9474 ?\line
+                \u9474 ? Google Ads API v18 (gRPC)\line
+                \u9474 ? Hourly Sync\line
+                \u9660 ?\line
+\u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?\line
+\u9474 ?      WeaveAI Enterprise Platform                 \u9474 ?\line
+\u9474 ?                                                   \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   PostgreSQL Database (Neon)              \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - Campaign metrics (clicks, cost, etc.) \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - Daily performance snapshots           \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - Account hierarchy data                \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9516 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?  \u9474 ?\line
+\u9474 ?                  \u9474 ?                                \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9660 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   SvelteKit Web Application               \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - Performance dashboards                \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - AI chat interface (Anthropic Claude)  \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   - Automated report generation           \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?  \u9474 ?\line
+\u9474 ?                                                   \u9474 ?\line
+\u9474 ?  Internal Users Only (5-10 team members)         \u9474 ?\line
+\u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?\line
+                \u9474 ?\line
+                \u9474 ? Email/PDF Reports\line
+                \u9660 ?\line
+         Client Communication\line
+    (External, not API-connected)\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Tool Design & Implementation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Architecture Overview\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Technology Stack:} - {\b Frontend:} SvelteKit 5 (TypeScript) - {\b Backend:} Node.js with SvelteKit server-side API routes - {\b Database:} PostgreSQL (Neon cloud hosting) - {\b Google Ads Integration:} Official {\f1 google-ads-api} Node.js client library (gRPC) - {\b AI/ML:} Anthropic Claude API for natural language queries - {\b Authentication:} OAuth 2.0 with refresh token\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Implementation Files:} - {\f1 src/lib/server/integrations/google-ads-client.ts} - Google Ads API wrapper - {\f1 src/lib/server/db/schema.ts} - Database schema for campaigns and metrics - {\f1 src/routes/api/sync/google-ads/+server.ts} - Scheduled sync endpoint - {\f1 src/routes/(app)/analytics/+page.svelte} - Dashboard UI - Deployed at: {\f1 https://app.greensignals.io}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Data Synchronization Process\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Automated Sync Schedule:} 1. {\b Hourly Sync} (via cron job): - Fetch campaign list from all accounts under MCC - Pull last 24 hours of performance metrics - Update database with new metrics (upsert by date + campaign ID) - Check campaign status changes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab {\b Daily Deep Sync} (midnight UTC):\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Historical performance data (last 90 days)\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Account hierarchy updates\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Conversion tracking metrics\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Budget pacing calculations\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab {\b Real-time Queries}:\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab AI chat interface queries API directly for current data\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Fallback to cached database data if API rate limits approached\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Database Schema\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Tables Created:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 -- Campaign master data\line
+CREATE TABLE google_ads_campaigns (\line
+  id TEXT PRIMARY KEY,\line
+  customer_id TEXT NOT NULL,\line
+  name TEXT NOT NULL,\line
+  status TEXT NOT NULL,\line
+  advertising_channel_type TEXT,\line
+  bidding_strategy_type TEXT,\line
+  start_date DATE,\line
+  end_date DATE,\line
+  created_at TIMESTAMP DEFAULT NOW(),\line
+  updated_at TIMESTAMP DEFAULT NOW()\line
+);\line
+\line
+-- Daily performance metrics\line
+CREATE TABLE google_ads_campaign_metrics (\line
+  id SERIAL PRIMARY KEY,\line
+  campaign_id TEXT REFERENCES google_ads_campaigns(id),\line
+  date DATE NOT NULL,\line
+  clicks INTEGER DEFAULT 0,\line
+  impressions INTEGER DEFAULT 0,\line
+  cost DECIMAL(10,2) DEFAULT 0,\line
+  conversions DECIMAL(10,2) DEFAULT 0,\line
+  conversions_value DECIMAL(10,2) DEFAULT 0,\line
+  average_cpc DECIMAL(10,2) DEFAULT 0,\line
+  ctr DECIMAL(5,4) DEFAULT 0,\line
+  cost_per_conversion DECIMAL(10,2) DEFAULT 0,\line
+  synced_at TIMESTAMP DEFAULT NOW(),\line
+  UNIQUE(campaign_id, date)\line
+);\line
+\line
+-- Account hierarchy\line
+CREATE TABLE google_ads_accounts (\line
+  customer_id TEXT PRIMARY KEY,\line
+  descriptive_name TEXT NOT NULL,\line
+  currency_code TEXT,\line
+  time_zone TEXT,\line
+  manager BOOLEAN DEFAULT FALSE,\line
+  parent_customer_id TEXT,\line
+  updated_at TIMESTAMP DEFAULT NOW()\line
+);\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 API Services & Endpoints Used\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Google Ads API Resources Called\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 1. Campaign Reporting (Primary Use Case)} - {\b Resource:} {\f1 campaign} - {\b Query Language:} GAQL (Google Ads Query Language) - {\b Metrics Retrieved:} - {\f1 metrics.clicks} - {\f1 metrics.impressions} - {\f1 metrics.cost_micros} - {\f1 metrics.conversions} - {\f1 metrics.conversions_value} - {\f1 metrics.average_cpc} - {\f1 metrics.ctr} - {\f1 metrics.cost_per_conversion}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Example Query:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 SELECT\line
+  campaign.id,\line
+  campaign.name,\line
+  campaign.status,\line
+  campaign.advertising_channel_type,\line
+  campaign.bidding_strategy_type,\line
+  metrics.clicks,\line
+  metrics.impressions,\line
+  metrics.cost_micros,\line
+  metrics.conversions,\line
+  metrics.ctr\line
+FROM campaign\line
+WHERE campaign.status != 'REMOVED'\line
+AND segments.date BETWEEN '2025-10-01' AND '2025-11-01'\line
+ORDER BY campaign.id\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 2. Account Hierarchy (MCC Structure)} - {\b Resource:} {\f1 customer_client} - {\b Purpose:} List all client accounts under MCC for batch reporting - {\b Fields:} {\f1 customer_client.id}, {\f1 customer_client.descriptive_name}, {\f1 customer_client.manager}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 3. Customer Information} - {\b Resource:} {\f1 customer} - {\b Purpose:} Verify account access and retrieve account settings - {\b Fields:} {\f1 customer.id}, {\f1 customer.descriptive_name}, {\f1 customer.currency_code}, {\f1 customer.time_zone}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b 4. Campaign Management (Limited)} - {\b Operation:} Update campaign status (enable/pause) - {\b Use Case:} Pause campaigns when inventory is out of stock (via external inventory API sync) - {\b Service:} Campaign mutation operations via gRPC client\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Required Minimum Functionality (RMF) Implementation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Tool Classification: Internal-Only Tool\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Our tool qualifies as Internal-Only because:} 1. Used exclusively by employees within our organization 2. No external clients or third parties access the tool 3. Reports generated are shared externally, but tool access is restricted 4. Managed accounts are clients of our agency, accessed via MCC\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b RMF Requirements:} According to Google\u8217's policy, Internal-Only tools have {\b no RMF requirements}. However, we have implemented reporting functionality to demonstrate responsible API usage.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Implemented Functionality\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Reporting Functionality (Implemented)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Account/Campaign Level Reports:} - Clicks, cost, impressions, conversions, conversion value - Campaign status and channel type - Date range filtering (custom date ranges) - Account-level aggregation across MCC\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Dashboard Views:} 1. {\b Campaign Performance Dashboard} - Top campaigns by clicks, cost, conversions - Trend charts for key metrics (7, 30, 90-day views) - Budget pacing indicators - ROI calculations\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 2.\tx360\tab {\b Account Overview}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab List all client accounts under MCC\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Account-level performance summaries\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Currency and timezone information\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 3.\tx360\tab {\b AI Chat Interface}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Natural language queries: \u8220"What were the top 5 campaigns last month?\u8221"\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Automated data retrieval and analysis via Claude API\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Contextual responses with metric comparisons\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel3 \b \fs24 Management Functionality (Limited Implementation)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Campaign Status Management:} - Pause campaigns when products go out of stock (inventory sync) - Enable campaigns when inventory is restocked - Status changes logged in database for audit trail\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b No Creation Functionality:} - We do NOT create campaigns via API - Campaign setup is performed manually in Google Ads UI - API is strictly for reporting and limited status management\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 User Interface & Screenshots\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Dashboard Mockup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Main Analytics Dashboard:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?\line
+\u9474 ?  WeaveAI Enterprise - Google Ads Performance                     \u9474 ?\line
+\u9500 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9508 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  [Date Range: Last 30 Days \u9660 ?]  [Account: All Accounts \u9660 ?]        \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ? \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ? \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?             \u9474 ?\line
+\u9474 ?  \u9474 ?   Total      \u9474 ? \u9474 ?   Total      \u9474 ? \u9474 ?  Total       \u9474 ?             \u9474 ?\line
+\u9474 ?  \u9474 ?   Clicks     \u9474 ? \u9474 ?   Cost       \u9474 ? \u9474 ?  Conversions \u9474 ?             \u9474 ?\line
+\u9474 ?  \u9474 ?   12,547     \u9474 ? \u9474 ?   $8,432.50  \u9474 ? \u9474 ?   156        \u9474 ?             \u9474 ?\line
+\u9474 ?  \u9474 ?   \u8593 ? 12.3%    \u9474 ? \u9474 ?   \u8595 ? 5.2%     \u9474 ? \u9474 ?   \u8593 ? 8.7%     \u9474 ?             \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ? \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ? \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?             \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  Campaign Performance (Top 10)                                   \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? Campaign Name         Clicks   Cost      Conv   ROI       \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9500 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9508 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? Stewart Golf - Brand  3,456    $2,150    45     285%      \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? GS Gardens - Search   2,890    $1,890    38     210%      \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? Forever Green - Local 1,234    $890      12     145%      \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? ...                                                        \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?  \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  Performance Trend (Last 30 Days)                                \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?         [Line Chart: Clicks, Cost, Conversions]            \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?    \u9585 ?\u9586 ?                                                       \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?   \u9585 ?  \u9586 ?    \u9585 ?\u9586 ?                                                \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?  \u9585 ?    \u9586 ?  \u9585 ?  \u9586 ?                                               \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?  \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  AI Assistant                                                    \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?  \u9474 ?\line
+\u9474 ?  \u9474 ? \u55357 ?\u56492 ? Ask about campaign performance...                       \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9474 ?    "Which campaigns had the best ROI last week?"           \u9474 ?  \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?  \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Note:} Actual screenshots will be taken once Standard Access is approved and we can access production data. Currently in test mode, we cannot retrieve real campaign data for screenshots.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 AI Chat Interface Mockup\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?\line
+\u9474 ?  AI Chat - Campaign Analysis                                     \u9474 ?\line
+\u9500 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9508 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  You: What were our top performing campaigns last month?        \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  \u55358 ?\u56598 ? Claude: Based on data from October 2025, here are your      \u9474 ?\line
+\u9474 ?     top 3 campaigns by ROI:                                      \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?     1. Stewart Golf - Brand Campaign                             \u9474 ?\line
+\u9474 ?        \u8226 ? 3,456 clicks                                            \u9474 ?\line
+\u9474 ?        \u8226 ? $2,150 spend                                            \u9474 ?\line
+\u9474 ?        \u8226 ? 45 conversions                                          \u9474 ?\line
+\u9474 ?        \u8226 ? 285% ROI                                                \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?     2. GS Gardens - Search Campaign                              \u9474 ?\line
+\u9474 ?        \u8226 ? 2,890 clicks                                            \u9474 ?\line
+\u9474 ?        \u8226 ? $1,890 spend                                            \u9474 ?\line
+\u9474 ?        \u8226 ? 38 conversions                                          \u9474 ?\line
+\u9474 ?        \u8226 ? 210% ROI                                                \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?     [View Full Report] [Export to PDF]                           \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9474 ?  \u9484 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9488 ?    \u9474 ?\line
+\u9474 ?  \u9474 ? Type your question...                            [Send]  \u9474 ?    \u9474 ?\line
+\u9474 ?  \u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?    \u9474 ?\line
+\u9474 ?                                                                   \u9474 ?\line
+\u9492 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9472 ?\u9496 ?\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Implementation Code Samples\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Google Ads API Client (TypeScript)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b File:} {\f1 src/lib/server/integrations/google-ads-client.ts}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 import \{ GoogleAdsApi, Customer \} from 'google-ads-api';\line
+\line
+export interface GoogleAdsConfig \{\line
+  developerToken: string;\line
+  clientId: string;\line
+  clientSecret: string;\line
+  refreshToken: string;\line
+  customerId: string;\line
+\}\line
+\line
+function getCustomer(config: GoogleAdsConfig): Customer \{\line
+  const client = new GoogleAdsApi(\{\line
+    client_id: config.clientId,\line
+    client_secret: config.clientSecret,\line
+    developer_token: config.developerToken,\line
+  \});\line
+\line
+  const customerId = config.customerId.replace(/-/g, '');\line
+\line
+  return client.Customer(\{\line
+    customer_id: customerId,\line
+    refresh_token: config.refreshToken,\line
+    login_customer_id: customerId,\line
+  \});\line
+\}\line
+\line
+export async function listCampaigns(\line
+  config: GoogleAdsConfig,\line
+  options: \{\line
+    startDate?: string;\line
+    endDate?: string;\line
+    includeMetrics?: boolean;\line
+  \} = \{\}\line
+): Promise<GoogleAdsCampaign[]> \{\line
+  const \{ startDate, endDate, includeMetrics = true \} = options;\line
+  const customer = getCustomer(config);\line
+\line
+  let query = `\line
+    SELECT\line
+      campaign.id,\line
+      campaign.name,\line
+      campaign.status,\line
+      campaign.advertising_channel_type,\line
+      campaign.bidding_strategy_type,\line
+      metrics.clicks,\line
+      metrics.impressions,\line
+      metrics.cost_micros,\line
+      metrics.conversions,\line
+      metrics.ctr\line
+    FROM campaign\line
+    WHERE campaign.status != 'REMOVED'\line
+  `;\line
+\line
+  if (startDate && endDate) \{\line
+    query += ` AND segments.date BETWEEN '$\{startDate\}' AND '$\{endDate\}'`;\line
+  \}\line
+\line
+  const results = await customer.query(query);\line
+\line
+  // Transform and return results\line
+  return Array.from(results).map(row => (\{\line
+    id: row.campaign.id?.toString() || '',\line
+    name: row.campaign.name || '',\line
+    status: row.campaign.status || 'UNKNOWN',\line
+    metrics: \{\line
+      clicks: Number(row.metrics.clicks || 0),\line
+      cost: Number(row.metrics.cost_micros || 0) / 1000000,\line
+      conversions: Number(row.metrics.conversions || 0),\line
+      // ... additional metrics\line
+    \}\line
+  \}));\line
+\}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Automated Sync Script\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b File:} {\f1 src/lib/server/sync/google-ads-sync.ts}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 import * as googleAds from '../integrations/google-ads-client';\line
+import \{ db \} from '../db';\line
+import \{ google_ads_campaigns, google_ads_campaign_metrics \} from '../db/schema';\line
+\line
+export async function syncGoogleAdsData() \{\line
+  console.log('Starting Google Ads sync...');\line
+\line
+  const config: googleAds.GoogleAdsConfig = \{\line
+    developerToken: process.env.GOOGLE_ADS_DEVELOPER_TOKEN!,\line
+    clientId: process.env.GOOGLE_ADS_CLIENT_ID!,\line
+    clientSecret: process.env.GOOGLE_ADS_CLIENT_SECRET!,\line
+    refreshToken: process.env.GOOGLE_ADS_REFRESH_TOKEN!,\line
+    customerId: process.env.GOOGLE_ADS_CUSTOMER_ID!,\line
+  \};\line
+\line
+  // Get date range for last 24 hours\line
+  const dateRange = googleAds.getDateRange(1);\line
+\line
+  // Fetch all accounts under MCC\line
+  const accounts = await googleAds.listCustomerAccounts(config);\line
+\line
+  // Sync each account\line
+  for (const account of accounts) \{\line
+    if (account.manager) continue; // Skip manager accounts\line
+\line
+    try \{\line
+      const accountConfig = \{ ...config, customerId: account.customerId \};\line
+      const campaigns = await googleAds.listCampaigns(accountConfig, \{\line
+        startDate: dateRange.startDate,\line
+        endDate: dateRange.endDate,\line
+        includeMetrics: true,\line
+      \});\line
+\line
+      // Upsert campaigns and metrics to database\line
+      for (const campaign of campaigns) \{\line
+        await db.insert(google_ads_campaigns)\line
+          .values(\{\line
+            id: campaign.id,\line
+            customer_id: account.customerId,\line
+            name: campaign.name,\line
+            status: campaign.status,\line
+            // ... additional fields\line
+          \})\line
+          .onConflictDoUpdate(\{\line
+            target: google_ads_campaigns.id,\line
+            set: \{ updated_at: new Date() \}\line
+          \});\line
+\line
+        await db.insert(google_ads_campaign_metrics)\line
+          .values(\{\line
+            campaign_id: campaign.id,\line
+            date: dateRange.endDate,\line
+            clicks: campaign.metrics.clicks,\line
+            cost: campaign.metrics.cost,\line
+            // ... additional metrics\line
+          \})\line
+          .onConflictDoNothing(); // Prevent duplicate daily records\line
+      \}\line
+\line
+      console.log(`Synced $\{campaigns.length\} campaigns for $\{account.descriptiveName\}`);\line
+    \} catch (error) \{\line
+      console.error(`Error syncing $\{account.descriptiveName\}:`, error);\line
+    \}\line
+  \}\line
+\line
+  console.log('Google Ads sync complete');\line
+\}\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 API Usage & Quota Management\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Estimated API Usage\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Daily Operations:} - {\b Hourly Sync (24 times/day):} - 1 request to list accounts (MCC hierarchy) - ~5-10 requests to list campaigns per client account - Total: ~24 * 10 = 240 requests/day\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b Daily Deep Sync (1 time/day):}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Historical data fetches: ~50 requests\sa180\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab {\b AI Chat Queries (on-demand):}\par}
+{\pard \ql \f0 \sa0 \li720 \fi-360 \endash \tx360\tab Estimated 20-50 ad-hoc queries per day\sa180\sa180\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Total Estimated Operations:} ~500-1,000 operations/day\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Standard Access Requirement:} - Current Test Mode Limit: 15,000 operations/day - Standard Access Limit: 1,500,000 operations/day - {\b Reason for Standard Access:} Need access to production client accounts under MCC (test mode only allows test accounts)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Quota Management Strategy\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Rate Limiting:} - Implement exponential backoff for API errors - Cache frequently accessed data in PostgreSQL - Use database queries for dashboard rendering (not real-time API calls) - Limit AI chat to 1 API call per query (use cached data when possible)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Monitoring:} - Log all API requests with timestamps - Track daily operation count - Alert if approaching quota limits - Monthly usage reports for compliance\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Security & Compliance\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 OAuth 2.0 Authentication\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Credentials Storage:} - All OAuth credentials stored in environment variables - Production credentials managed via Vercel secrets - No credentials committed to version control - Refresh token has no expiration (revocable if compromised)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Environment Variables:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 GOOGLE_ADS_DEVELOPER_TOKEN=swQQBb1hPh8Ofid5fnDgjg\line
+GOOGLE_ADS_CLIENT_ID=1093527084995-ne9a84445ofhjqtm4atu9dfk2sun0d06.apps.googleusercontent.com\line
+GOOGLE_ADS_CLIENT_SECRET=[Securely stored in Vercel]\line
+GOOGLE_ADS_REFRESH_TOKEN=[Securely stored in Vercel]\line
+GOOGLE_ADS_CUSTOMER_ID=517-565-4322\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Access Control\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Application-Level Security:} - User authentication via OAuth (Google/GitHub) - Role-based access control (admin, viewer) - Session management with secure cookies - HTTPS only (enforced by Vercel)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Database Security:} - PostgreSQL hosted on Neon (SSL required) - Database credentials rotated quarterly - Read-only replicas for reporting queries - Automated backups (daily)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Data Retention & Privacy\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Data Storage:} - Campaign performance data retained for 2 years (rolling window) - Personal data: None (no user PII stored from Google Ads) - Account names and IDs only (no customer personal information)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Compliance:} - GDPR compliant (no personal data processing) - Data processing agreement with hosting providers - API usage logs retained for 90 days\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Testing & Validation\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Development Testing\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Test Environment:} - OAuth credentials: \u9989 ? Working - Refresh token generation: \u9989 ? Working - Access token exchange: \u9989 ? Working (3599s expiry) - API connectivity: \u9989 ? Connected - gRPC client library: \u9989 ? Installed and configured\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Current Limitation:} - Developer token in test mode - Cannot access production account (517-565-4322) until Standard Access approved - Test account not available for demonstration\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Test Script:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 # Connection test (after Standard Access approval)\line
+npx tsx test-google-ads-grpc.ts\line
+\line
+# Expected output:\line
+# \u9989 ? Customer Details: Stewart Golf Ads\line
+# \u9989 ? Found 25 campaigns\line
+# \u9989 ? Total clicks: 15,234\line
+# \u9989 ? Total cost: $12,456.78\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Post-Approval Testing Plan\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Phase 1: API Access Validation (Day 1)} 1. Run connection test script 2. Verify access to all client accounts under MCC 3. Test campaign listing for each account 4. Validate metrics retrieval\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Phase 2: Data Sync (Days 2-3)} 1. Run initial historical data import (90 days) 2. Verify data accuracy against Google Ads UI 3. Test hourly sync schedule 4. Monitor for API errors/rate limits\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Phase 3: Dashboard Validation (Days 4-5)} 1. Populate dashboards with real data 2. User acceptance testing with marketing team 3. AI chat interface validation 4. Performance testing (load time, query speed)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Phase 4: Production Deployment (Day 6)} 1. Enable automated sync schedule 2. Monitor API usage 3. Set up alerts for errors 4. Final user training\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Maintenance & Support\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Ongoing Maintenance\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Automated Monitoring:} - Daily sync success/failure alerts - API quota usage tracking - Error rate monitoring (Sentry integration) - Uptime monitoring (99.9% SLA target)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Manual Reviews:} - Weekly: Review sync logs for errors - Monthly: Audit API usage and optimize queries - Quarterly: Review and update dashboard metrics - Annually: Credential rotation and security audit\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Support Contact\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Primary Contact:} - {\b Name:} Ian Stone - {\b Email:} ian@greensignals.io - {\b Role:} Lead Developer & Platform Owner\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Technical Team:} - Development: Internal engineering team - Marketing: Internal marketing operations team - Support: support@greensignals.io\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Application Submission Checklist\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Business model description\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Tool classification (Internal-Only)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? User access documentation (internal only)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Architecture diagram\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Database schema\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? API endpoints and queries documented\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? RMF compliance explanation\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? UI mockups included\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Code samples provided\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Security measures documented\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? OAuth configuration complete\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Testing plan outlined\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Quota usage estimates\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9746 ? Support contact information\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab \u9744 ? Screenshots of live dashboard (pending Standard Access approval)\sa180\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Appendix: Technical Specifications\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 System Requirements\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Production Environment:} - {\b Hosting:} Vercel (Serverless Functions) - {\b Database:} Neon PostgreSQL (Cloud) - {\b CDN:} Vercel Edge Network - {\b Domains:} - Primary: https://app.greensignals.io - API: https://weaveai-enterprise.vercel.app\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Dependencies:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 \{\line
+  "google-ads-api": "^18.0.0",\line
+  "sveltekit": "^5.0.0",\line
+  "drizzle-orm": "^0.30.0",\line
+  "pg": "^8.11.0",\line
+  "@anthropic-ai/sdk": "^0.27.0"\line
+\}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 API Client Configuration\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b gRPC Settings:}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 \{\line
+  client_id: process.env.GOOGLE_ADS_CLIENT_ID,\line
+  client_secret: process.env.GOOGLE_ADS_CLIENT_SECRET,\line
+  developer_token: process.env.GOOGLE_ADS_DEVELOPER_TOKEN,\line
+  refresh_token: process.env.GOOGLE_ADS_REFRESH_TOKEN,\line
+  login_customer_id: "517-565-4322" // MCC account\line
+\}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Timeout Settings:} - Default query timeout: 60 seconds - Connection timeout: 30 seconds - Retry attempts: 3 (exponential backoff)\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel2 \b \fs28 Database Performance\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Connection Pooling:} - Max connections: 20 - Idle timeout: 30 seconds - Connection retry: 3 attempts\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Query Optimization:} - Indexes on: campaign_id, date, customer_id - Materialized views for aggregate reports - Partition tables by month for metrics\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \outlinelevel1 \b \fs32 Conclusion\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 WeaveAI Enterprise is a purpose-built internal analytics platform designed to responsibly leverage the Google Ads API for reporting and limited campaign management. As an Internal-Only tool, we are exempt from RMF requirements but have implemented comprehensive reporting functionality to demonstrate best practices.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 We request Standard Access to enable production account access under our MCC structure (517-565-4322) and support our growing marketing operations team. Our estimated usage of 500-1,000 operations/day is well within Standard Access limits, and we have robust security, monitoring, and compliance measures in place.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Expected Go-Live Date:} Within 7 days of Standard Access approval {\b Business Impact:} Enable data-driven decision making for $50,000+/month in managed ad spend\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Thank you for considering our Standard Access application.\par}
+{\pard \qc \f0 \sa180 \li0 \fi0 \emdash\emdash\emdash\emdash\emdash\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 {\b Document Version:} 1.0 {\b Last Updated:} November 2, 2025 {\b Submitted By:} Ian Stone, Lead Developer, WeaveAI / Green Signals\par}
+}
