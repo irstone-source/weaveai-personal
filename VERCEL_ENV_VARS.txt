@@ -1,0 +1,57 @@
+# COPY-PASTE THESE INTO VERCEL
+# Go to: https://vercel.com/irstone-source/weaveai-personal/settings/environment-variables
+
+# Add each variable by clicking "Add" and pasting:
+# Name: [variable name]
+# Value: [value below]
+# Environment: Production, Preview, Development (select all 3)
+
+# ============================================================================
+# 1. DATABASE_URL
+# ============================================================================
+postgresql://neondb_owner:npg_Q4N8MPjnBeRS@ep-shiny-hat-adjdet0p-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require
+
+# ============================================================================
+# 2. ANTHROPIC_API_KEY
+# ============================================================================
+YOUR_ANTHROPIC_KEY_FROM_WEAVEAI_ENTERPRISE
+
+# ============================================================================
+# 3. PINECONE_API_KEY
+# ============================================================================
+pcsk_2oYxZN_62CEJy2FBforSeVJkRpjPaGKcjBfiYZtyJjczuh5qvp8PGSSff3dWw2UNno7Jsm
+
+# ============================================================================
+# 4. PINECONE_ENVIRONMENT
+# ============================================================================
+us-east-1
+
+# ============================================================================
+# 5. PINECONE_INDEX_NAME
+# ============================================================================
+weaveai-personal
+
+# ============================================================================
+# 6. AUTH_GOOGLE_ID
+# ============================================================================
+1093527084995-ne9a84445ofhjqtm4atu9dfk2sun0d06.apps.googleusercontent.com
+
+# ============================================================================
+# 7. AUTH_GOOGLE_SECRET
+# ============================================================================
+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
+
+# ============================================================================
+# 8. AUTH_SECRET
+# ============================================================================
+oyxft7Ra/YCPdHM8GB5Y4f18ZxAFsIYeM6eV3UArDnw=
+
+
+# ============================================================================
+# AFTER ADDING ALL 8 VARIABLES:
+# ============================================================================
+# 1. Go to Deployments tab
+# 2. Click "..." menu on latest deployment
+# 3. Click "Redeploy"
+# 4. Wait for build to complete
+# 5. Test your app!

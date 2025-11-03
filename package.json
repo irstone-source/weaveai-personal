@@ -24,7 +24,12 @@
 		"test:e2e:headed": "playwright test --headed",
 		"test:e2e:report": "playwright show-report",
 		"debug": "tsx scripts/debug-agent.ts",
-		"debug:watch": "tsx watch scripts/debug-agent.ts"
+		"debug:watch": "tsx watch scripts/debug-agent.ts",
+		"import:chatgpt": "tsx scripts/import-chatgpt.ts",
+		"import:claude": "tsx scripts/import-claude.ts",
+		"import:embeddings": "tsx scripts/import-embeddings.ts",
+		"import:tags": "tsx scripts/tag-conversations.ts",
+		"get-user-id": "tsx scripts/get-user-id.ts"
 	},
 	"devDependencies": {
 		"@inlang/cli": "^3.0.0",

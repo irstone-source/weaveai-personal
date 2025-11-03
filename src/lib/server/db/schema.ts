@@ -961,6 +961,146 @@ export const clientInteractions = pgTable("client_interactions", {
 	}
 })
 
+// ==================== CHATGPT IMPORT TABLES ====================
+
+// Imported ChatGPT conversations
+export const importedConversations = pgTable("imported_conversation", {
+	id: text("id")
+		.primaryKey()
+		.$defaultFn(() => randomUUID()),
+	userId: text("userId")
+		.notNull()
+		.references(() => users.id, { onDelete: "cascade" }),
+	chatgptUuid: text("chatgptUuid").notNull().unique(), // Original ChatGPT UUID
+	name: text("name").notNull(), // Conversation title
+	summary: text("summary"), // AI-generated summary
+	tags: json("tags").$type<string[]>().default([]), // AI-generated tags
+	messageCount: integer("messageCount").notNull().default(0),
+	chatgptCreatedAt: timestamp("chatgptCreatedAt", { mode: "date" }).notNull(), // Original creation date from ChatGPT
+	chatgptUpdatedAt: timestamp("chatgptUpdatedAt", { mode: "date" }).notNull(), // Original update date from ChatGPT
+	isPineconeStored: boolean("isPineconeStored").notNull().default(false),
+	pineconeId: text("pineconeId"), // Vector ID in Pinecone
+	embeddingGenerated: boolean("embeddingGenerated").notNull().default(false),
+	tagsGenerated: boolean("tagsGenerated").notNull().default(false), // Whether AI tags have been generated
+	importedAt: timestamp("importedAt", { mode: "date" }).notNull().defaultNow(),
+	createdAt: timestamp("createdAt", { mode: "date" }).notNull().defaultNow(),
+	updatedAt: timestamp("updatedAt", { mode: "date" }).notNull().defaultNow(),
+}, (table) => {
+	return {
+		userIdIdx: index('imported_conversation_user_id_idx').on(table.userId),
+		chatgptUuidIdx: index('imported_conversation_chatgpt_uuid_idx').on(table.chatgptUuid),
+		chatgptCreatedAtIdx: index('imported_conversation_created_at_idx').on(table.chatgptCreatedAt),
+	}
+})
+
+// Imported ChatGPT messages
+export const importedMessages = pgTable("imported_message", {
+	id: text("id")
+		.primaryKey()
+		.$defaultFn(() => randomUUID()),
+	conversationId: text("conversationId")
+		.notNull()
+		.references(() => importedConversations.id, { onDelete: "cascade" }),
+	chatgptUuid: text("chatgptUuid").notNull().unique(), // Original ChatGPT message UUID
+	sender: text("sender", {
+		enum: ["human", "assistant"]
+	}).notNull(),
+	text: text("text").notNull(), // Message text content
+	content: json("content").$type<Array<{
+		type: string;
+		text?: string;
+		args?: any;
+		result?: any;
+		[key: string]: any;
+	}>>().notNull().default([]), // Rich content blocks
+	attachments: json("attachments").$type<Array<{
+		name?: string;
+		url?: string;
+		mimeType?: string;
+		id?: string;
+		[key: string]: any;
+	}>>().notNull().default([]),
+	files: json("files").$type<Array<{
+		id?: string;
+		name?: string;
+		mimeType?: string;
+		[key: string]: any;
+	}>>().notNull().default([]),
+	metadata: json("metadata").$type<{
+		model?: string;
+		tokens?: number;
+		[key: string]: any;
+	}>().notNull().default({}),
+	isPineconeStored: boolean("isPineconeStored").notNull().default(false),
+	pineconeId: text("pineconeId"), // Vector ID in Pinecone
+	embeddingGenerated: boolean("embeddingGenerated").notNull().default(false),
+	createdAt: timestamp("createdAt", { mode: "date" }).notNull().defaultNow(),
+}, (table) => {
+	return {
+		conversationIdIdx: index('imported_message_conversation_id_idx').on(table.conversationId),
+		senderIdx: index('imported_message_sender_idx').on(table.sender),
+	}
+})
+
+// Imported ChatGPT memories (from memories.json)
+export const importedMemories = pgTable("imported_memory", {
+	id: text("id")
+		.primaryKey()
+		.$defaultFn(() => randomUUID()),
+	userId: text("userId")
+		.notNull()
+		.references(() => users.id, { onDelete: "cascade" }),
+	memoryType: text("memoryType", {
+		enum: ["conversation", "project"]
+	}).notNull(),
+	projectUuid: text("projectUuid"), // For project-specific memories
+	content: text("content").notNull(), // Full memory text
+	category: text("category"), // e.g., 'work', 'personal', 'health', 'business'
+	tags: json("tags").$type<string[]>().notNull().default([]),
+	isPineconeStored: boolean("isPineconeStored").notNull().default(false),
+	pineconeId: text("pineconeId"), // Vector ID in Pinecone
+	embeddingGenerated: boolean("embeddingGenerated").notNull().default(false),
+	importedAt: timestamp("importedAt", { mode: "date" }).notNull().defaultNow(),
+	createdAt: timestamp("createdAt", { mode: "date" }).notNull().defaultNow(),
+}, (table) => {
+	return {
+		userIdIdx: index('imported_memory_user_id_idx').on(table.userId),
+		memoryTypeIdx: index('imported_memory_type_idx').on(table.memoryType),
+		projectUuidIdx: index('imported_memory_project_uuid_idx').on(table.projectUuid),
+	}
+})
+
+// Imported ChatGPT projects (from projects.json)
+export const importedProjects = pgTable("imported_project", {
+	id: text("id")
+		.primaryKey()
+		.$defaultFn(() => randomUUID()),
+	userId: text("userId")
+		.notNull()
+		.references(() => users.id, { onDelete: "cascade" }),
+	chatgptProjectId: text("chatgptProjectId").notNull().unique(), // Original ChatGPT project ID
+	name: text("name").notNull(),
+	description: text("description"),
+	conversationUuid: text("conversationUuid"), // Associated conversation UUID
+	content: text("content").notNull(), // Full project content
+	metadata: json("metadata").$type<{
+		tools?: string[];
+		resources?: string[];
+		principles?: string[];
+		[key: string]: any;
+	}>().notNull().default({}),
+	isPineconeStored: boolean("isPineconeStored").notNull().default(false),
+	pineconeId: text("pineconeId"), // Vector ID in Pinecone
+	embeddingGenerated: boolean("embeddingGenerated").notNull().default(false),
+	importedAt: timestamp("importedAt", { mode: "date" }).notNull().defaultNow(),
+	createdAt: timestamp("createdAt", { mode: "date" }).notNull().defaultNow(),
+}, (table) => {
+	return {
+		userIdIdx: index('imported_project_user_id_idx').on(table.userId),
+		chatgptProjectIdIdx: index('imported_project_chatgpt_id_idx').on(table.chatgptProjectId),
+	}
+})
+
 // ==================== SLACK INTEGRATION ====================
 
 // Slack Integration - stores OAuth credentials

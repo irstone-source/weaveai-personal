@@ -11,3 +11,4 @@ coverage/
 .vscode/
 *.tgz
 .vercel
+data-imports/
