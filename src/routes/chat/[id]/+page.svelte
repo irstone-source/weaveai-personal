@@ -23,23 +23,36 @@
   // Load the specific chat when page loads
   onMount(async () => {
     if (data.chat) {
-      // Set chat data from the page load
-      chatState.currentChatId = data.chatId;
-      chatState.selectedModel = data.chat.model;
-      chatState.previousModel = data.chat.model;
+      // Only load server data if we're navigating to a DIFFERENT chat
+      // Don't overwrite in-memory messages if we're already on this chat
+      const isDifferentChat = chatState.currentChatId !== data.chatId;
 
-      // Only clear tool selection if this is NOT a fresh chat creation
-      if (!chatState.isFreshChat) {
-        chatState.clearSelectedTool();
+      if (isDifferentChat) {
+        // Set chat data from the page load
+        chatState.currentChatId = data.chatId;
+        chatState.selectedModel = data.chat.model;
+        chatState.previousModel = data.chat.model;
+
+        // Only clear tool selection if this is NOT a fresh chat creation
+        if (!chatState.isFreshChat) {
+          chatState.clearSelectedTool();
+        }
+
+        // Reset the fresh chat flag after handling
+        chatState.resetFreshChatFlag();
+
+        chatState.messages = data.chat.messages.map((msg: any) => ({
+          ...msg,
+          content: chatState.cleanMessageContent(msg.content),
+        }));
+      } else {
+        // Same chat - just update metadata, preserve messages
+        chatState.selectedModel = data.chat.model;
+        chatState.previousModel = data.chat.model;
+
+        // Reset the fresh chat flag after handling
+        chatState.resetFreshChatFlag();
       }
-
-      // Reset the fresh chat flag after handling
-      chatState.resetFreshChatFlag();
-
-      chatState.messages = data.chat.messages.map((msg: any) => ({
-        ...msg,
-        content: chatState.cleanMessageContent(msg.content),
-      }));
     }
   });
 </script>
