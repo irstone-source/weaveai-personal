@@ -219,6 +219,7 @@ async function buildProviders(): Promise<Provider[]> {
             id: profile.id,
             name: profile.name,
             email: profile.email,
+            isAdmin: false,
           };
         },
         style: {
@@ -266,6 +267,7 @@ async function buildProviders(): Promise<Provider[]> {
             id: profile.id,
             name: profile.name,
             email: profile.email,
+            isAdmin: false,
           };
         },
         style: {

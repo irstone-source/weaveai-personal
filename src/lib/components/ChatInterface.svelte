@@ -58,6 +58,9 @@
   // Model filter state
   let modelFilter = $state<"all" | "images" | "videos">("all");
 
+  // Re-analyze mode state
+  let isReanalyzeMode = $state(false);
+
   // Textarea implementation based on thom-chat
   let textarea = $state<HTMLTextAreaElement>();
   const autosize = new TextareaAutosize();
@@ -1385,14 +1388,13 @@
               <button
                 class="ml-3 text-xs h-6 px-2 rounded border border-border cursor-pointer flex items-center gap-1 hover:bg-accent/50"
                 onclick={() => {
-                  // Show model selector and trigger re-analysis
-                  const currentModel = chatState.selectedModel;
+                  // Show model selector for re-analysis
                   if (confirm('Re-analyze this conversation with a different model? This will replace the current conversation.')) {
-                    // For now, let's use a prompt to select model
-                    // In a full implementation, you'd show a model selector dialog
-                    const modelName = prompt('Enter model name (e.g., anthropic/claude-opus-4.1, openai/gpt-5):');
-                    if (modelName) {
-                      chatState.reAnalyzeConversation(modelName);
+                    isReanalyzeMode = true;
+                    const popover = document.getElementById("model-selector-popover");
+                    const trigger = document.getElementById("model-selector-trigger");
+                    if (popover && trigger) {
+                      popover.showPopover();
                     }
                   }
                 }}
@@ -1409,6 +1411,13 @@
                 popover="auto"
                 class="model-selector-popover w-[calc(100vw-16px)] sm:w-[580px] lg:w-[620px] max-w-[620px] max-h-96 overflow-y-auto p-4 bg-popover text-popover-foreground border rounded-md shadow-md"
               >
+                <!-- Re-analyze mode indicator -->
+                {#if isReanalyzeMode}
+                  <div class="mb-3 p-2 bg-primary/10 border border-primary/20 rounded-md text-sm">
+                    <span class="font-medium text-primary">🔄 Re-analyze Mode:</span> Select a model to re-analyze your conversation
+                  </div>
+                {/if}
+
                 <!-- Filter Header -->
                 <div class="mb-4 pb-3 border-b">
                   <div class="flex items-center gap-6">
@@ -1488,15 +1497,30 @@
                               e.preventDefault();
                               e.stopPropagation();
 
-                              // Manually select model (with validation and override support)
-                              if (!chatState.manuallySelectModel(model.value)) {
-                                return;
-                              }
+                              // Check if we're in re-analyze mode
+                              if (isReanalyzeMode) {
+                                // Reset the flag
+                                isReanalyzeMode = false;
 
-                              // Close the popover after successful selection
-                              document
-                                .getElementById("model-selector-popover")
-                                ?.hidePopover();
+                                // Trigger re-analysis with selected model
+                                chatState.reAnalyzeConversation(model.value);
+
+                                // Close the popover
+                                document
+                                  .getElementById("model-selector-popover")
+                                  ?.hidePopover();
+                              } else {
+                                // Normal model selection
+                                // Manually select model (with validation and override support)
+                                if (!chatState.manuallySelectModel(model.value)) {
+                                  return;
+                                }
+
+                                // Close the popover after successful selection
+                                document
+                                  .getElementById("model-selector-popover")
+                                  ?.hidePopover();
+                              }
                             }}
                             disabled={isLocked}
                             class="p-3 border rounded-lg bg-card transition-colors text-left relative group {isSelected

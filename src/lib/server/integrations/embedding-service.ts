@@ -419,7 +419,7 @@ export async function processMeetingTranscript(
 			.update(meetings)
 			.set({
 				isInMemory: chunksStored > 0,
-				processingStatus: chunksStored === chunks.length ? 'completed' : 'partial',
+				processingStatus: chunksStored === chunks.length ? 'completed' : 'processing',
 				updatedAt: new Date()
 			})
 			.where(eq(meetings.id, meetingId));

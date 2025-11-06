@@ -6,6 +6,19 @@ import Header from "./card-header.svelte";
 import Title from "./card-title.svelte";
 import Action from "./card-action.svelte";
 
+// Create a hybrid export that works as both a component (<Card />)
+// and a namespace for subcomponents (<Card.Content />)
+// This preserves existing usage across the codebase.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const Card: any = Root;
+Card.Root = Root;
+Card.Content = Content;
+Card.Description = Description;
+Card.Footer = Footer;
+Card.Header = Header;
+Card.Title = Title;
+Card.Action = Action;
+
 export {
 	Root,
 	Content,
@@ -14,8 +27,9 @@ export {
 	Header,
 	Title,
 	Action,
-	//
-	Root as Card,
+	// Hybrid export
+	Card,
+	// Named subcomponent exports for direct import usage
 	Content as CardContent,
 	Description as CardDescription,
 	Footer as CardFooter,

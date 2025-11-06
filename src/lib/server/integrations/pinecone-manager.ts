@@ -36,7 +36,7 @@ export class PineconeMultiIndexManager {
 	private pinecone: Pinecone | null = null;
 	private initialized = false;
 	private indexDimension = 1536; // text-embedding-3-small
-	private indexMetric = 'cosine';
+	private indexMetric: 'cosine' | 'dotproduct' | 'euclidean' = 'cosine';
 	private serverlessConfig = {
 		cloud: 'aws' as const,
 		region: 'us-east-1' as const

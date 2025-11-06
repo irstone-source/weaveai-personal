@@ -80,7 +80,7 @@ export class LinearInteractionImporter {
 			let clientProfile = null;
 			if (issue.assigneeEmail) {
 				clientProfile = await db.query.clientProfiles.findFirst({
-					where: eq(clientProfiles.primaryEmail, issue.assigneeEmail)
+					where: eq(clientProfiles.clientEmail, issue.assigneeEmail)
 				});
 			}
 
@@ -125,7 +125,7 @@ export class LinearInteractionImporter {
 							linearCommentId: comment.id,
 							linearIssueId: comment.issue.id,
 							linearIssueIdentifier: comment.issue.identifier,
-							linearTeamId: issue.project?.linearTeamId
+							linearTeamId: (issue as any).project?.linearTeamId
 						},
 						pineconeStored: false,
 						interactionDate: new Date(comment.createdAt),
@@ -175,7 +175,7 @@ export class LinearInteractionImporter {
 			let clientProfile = null;
 			if (issue.assigneeEmail) {
 				clientProfile = await db.query.clientProfiles.findFirst({
-					where: eq(clientProfiles.primaryEmail, issue.assigneeEmail)
+					where: eq(clientProfiles.clientEmail, issue.assigneeEmail)
 				});
 			}
 
@@ -219,14 +219,14 @@ export class LinearInteractionImporter {
 				sentiment: null,
 				priority: 'none',
 				tags: ['linear', 'issue_update', updateType],
-				metadata: {
-					linearIssueId,
-					linearIssueIdentifier: issue.identifier,
-					updateType,
-					oldValue,
-					newValue,
-					linearTeamId: issue.project.linearTeamId
-				},
+					metadata: {
+						linearIssueId,
+						linearIssueIdentifier: issue.identifier,
+						updateType,
+						oldValue,
+						newValue,
+						linearTeamId: (issue as any).project?.linearTeamId
+					},
 				pineconeStored: false,
 				interactionDate: new Date(),
 				createdAt: new Date(),

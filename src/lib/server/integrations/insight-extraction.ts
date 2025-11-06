@@ -19,7 +19,6 @@ import {
 	clientInteractions
 } from '$lib/server/db/schema';
 import { eq, and } from 'drizzle-orm';
-import { generateId } from '$lib/utils';
 
 // ============================================================================
 // Configuration

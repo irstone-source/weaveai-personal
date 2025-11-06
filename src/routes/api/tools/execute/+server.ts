@@ -45,7 +45,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 
 		// Validate tool name
 		if (!toolName || typeof toolName !== 'string') {
-			return json<ToolExecutionResponse>({
+			return json({
 				success: false,
 				result: '',
 				error: 'Tool name is required'
@@ -55,7 +55,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		// Get executor function
 		const executor = TOOL_EXECUTORS[toolName];
 		if (!executor) {
-			return json<ToolExecutionResponse>({
+			return json({
 				success: false,
 				result: '',
 				error: `Unknown tool: ${toolName}. Available tools: ${Object.keys(TOOL_EXECUTORS).join(', ')}`
@@ -68,7 +68,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 		console.log('[Tool Execute] Tool execution successful:', toolName);
 		console.log('[Tool Execute] Result:', result);
 
-		return json<ToolExecutionResponse>({
+		return json({
 			success: true,
 			result
 		});
@@ -76,7 +76,7 @@ export const POST: RequestHandler = async ({ request, locals }) => {
 	} catch (error) {
 		console.error('[Tool Execute] Execution error:', error);
 
-		return json<ToolExecutionResponse>({
+		return json({
 			success: false,
 			result: '',
 			error: error instanceof Error ? error.message : 'Unknown error during tool execution'

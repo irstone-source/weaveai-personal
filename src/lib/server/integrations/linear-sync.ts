@@ -18,10 +18,7 @@ import {
 	linearIntegrations,
 	linearTeamMappings,
 	linearProjects,
-	linearIssues,
-	type LinearTeamMapping,
-	type LinearProject,
-	type LinearIssue
+	linearIssues
 } from '$lib/server/db/schema';
 import { eq, and, gte } from 'drizzle-orm';
 import { linearGraphQLRequest, getLinearTeams, getLinearProjects, getLinearIssues } from './linear';
@@ -129,7 +126,7 @@ export class LinearSyncService {
 			// Update integration sync time
 			await db
 				.update(linearIntegrations)
-				.set({ lastSyncedAt: new Date(), updatedAt: new Date() })
+				.set({ lastSyncAt: new Date(), updatedAt: new Date() })
 				.where(eq(linearIntegrations.id, this.integrationId));
 
 			console.log(`[Linear Sync] Full sync completed:`, result.stats);
@@ -390,7 +387,7 @@ export class LinearSyncService {
 				const integration = await db.query.linearIntegrations.findFirst({
 					where: eq(linearIntegrations.id, this.integrationId)
 				});
-				since = integration?.lastSyncedAt || new Date(Date.now() - 24 * 60 * 60 * 1000); // Default to 24 hours ago
+				since = integration?.lastSyncAt || new Date(Date.now() - 24 * 60 * 60 * 1000); // Default to 24 hours ago
 			}
 
 			console.log(`[Linear Sync] Starting incremental sync since ${since.toISOString()}`);

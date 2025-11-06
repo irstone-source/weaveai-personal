@@ -81,9 +81,9 @@ export class MeetingInteractionImporter {
 			let clientProfile = null;
 			for (const participant of participants) {
 				if (participant.email) {
-					clientProfile = await db.query.clientProfiles.findFirst({
-						where: eq(clientProfiles.primaryEmail, participant.email)
-					});
+				clientProfile = await db.query.clientProfiles.findFirst({
+					where: eq(clientProfiles.clientEmail, participant.email)
+				});
 					if (clientProfile) break;
 				}
 			}
@@ -99,9 +99,9 @@ export class MeetingInteractionImporter {
 				clientProfileId: clientProfile?.id || null,
 				interactionType,
 				sourceId: `meeting_${meetingId}`,
-				sourceUrl: meeting.recordingUrl || null,
+				sourceUrl: meeting.videoUrl || null,
 				title: meeting.title,
-				content: meeting.transcript.content,
+				content: meeting.transcript.summary || meeting.transcript.fullTranscript,
 				participants,
 				sentiment: null, // Will be set by auto-categorization
 				priority: 'none',
@@ -109,9 +109,8 @@ export class MeetingInteractionImporter {
 				metadata: {
 					meetingId,
 					duration: meeting.duration,
-					platform: meeting.platform,
-					hasRecording: !!meeting.recordingUrl,
-					transcriptProvider: meeting.transcript.provider,
+					platform: (meeting.metadata?.platform as string | undefined),
+					hasRecording: !!meeting.videoUrl,
 					speakerCount: participants.length,
 					...meeting.metadata
 				},
@@ -221,8 +220,7 @@ export class MeetingInteractionImporter {
 					// Check if client participated in this meeting
 					const participants = this.extractParticipants(meeting);
 					const clientParticipated = participants.some(p =>
-						p.email === client.primaryEmail ||
-						(client.secondaryEmails && client.secondaryEmails.includes(p.email || ''))
+						p.email && p.email === client.clientEmail
 					);
 
 					if (!clientParticipated) {
@@ -258,7 +256,7 @@ export class MeetingInteractionImporter {
 				}
 			}
 
-			console.log(`[Meeting Importer] Client ${client.name}: ${result.imported} meetings imported`);
+			console.log(`[Meeting Importer] Client ${client.clientName}: ${result.imported} meetings imported`);
 		} catch (error) {
 			const err = error as Error;
 			result.errors.push(`Failed to import client meetings: ${err.message}`);
@@ -305,7 +303,7 @@ export class MeetingInteractionImporter {
 	 * Determine interaction type based on meeting source
 	 */
 	private getMeetingInteractionType(meeting: any): string {
-		const platform = meeting.platform?.toLowerCase() || '';
+		const platform = (meeting.metadata?.platform as string | undefined)?.toLowerCase() || '';
 
 		if (platform.includes('fathom')) {
 			return 'fathom_meeting';
@@ -329,7 +327,7 @@ export class MeetingInteractionImporter {
 			tags.push(platform);
 		}
 
-		if (meeting.recordingUrl) {
+		if (meeting.videoUrl) {
 			tags.push('recorded');
 		}
 

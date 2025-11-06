@@ -1,0 +1,3206 @@
+[
+{
+  "iteration": 1,
+  "timestamp": "2025-11-04T08:15:58.749Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 860,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 860
+  }
+},
+{
+  "iteration": 2,
+  "timestamp": "2025-11-04T08:20:47.348Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 598,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 598
+  }
+},
+{
+  "iteration": 3,
+  "timestamp": "2025-11-04T08:25:36.964Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1614,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1614
+  }
+},
+{
+  "iteration": 4,
+  "timestamp": "2025-11-04T08:30:26.838Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1873,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1873
+  }
+},
+{
+  "iteration": 5,
+  "timestamp": "2025-11-04T08:35:15.322Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 478,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 478
+  }
+},
+{
+  "iteration": 6,
+  "timestamp": "2025-11-04T08:40:03.986Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 662,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 662
+  }
+},
+{
+  "iteration": 7,
+  "timestamp": "2025-11-04T08:44:52.532Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 545,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 545
+  }
+},
+{
+  "iteration": 8,
+  "timestamp": "2025-11-04T08:49:41.527Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 993,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 993
+  }
+},
+{
+  "iteration": 9,
+  "timestamp": "2025-11-04T08:54:30.013Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 484,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 484
+  }
+},
+{
+  "iteration": 10,
+  "timestamp": "2025-11-04T08:59:19.612Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1595,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1595
+  }
+},
+{
+  "iteration": 11,
+  "timestamp": "2025-11-04T09:04:08.095Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 482,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 482
+  }
+},
+{
+  "iteration": 12,
+  "timestamp": "2025-11-04T09:08:57.767Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1669,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1668
+  }
+},
+{
+  "iteration": 13,
+  "timestamp": "2025-11-04T09:13:46.237Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 426,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 426
+  }
+},
+{
+  "iteration": 14,
+  "timestamp": "2025-11-04T09:18:36.019Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1775,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1775
+  }
+},
+{
+  "iteration": 15,
+  "timestamp": "2025-11-04T09:23:24.532Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 505,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 505
+  }
+},
+{
+  "iteration": 16,
+  "timestamp": "2025-11-04T09:28:14.104Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1565,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1565
+  }
+},
+{
+  "iteration": 17,
+  "timestamp": "2025-11-04T09:33:02.615Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 503,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 503
+  }
+},
+{
+  "iteration": 18,
+  "timestamp": "2025-11-04T09:38:05.368Z",
+  "testsRun": 5,
+  "testsPassed": 4,
+  "testsFailed": 1,
+  "successRate": 80,
+  "duration": 14747,
+  "errors": [
+    "Slow response time: 14746ms"
+  ],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 14746
+  }
+},
+{
+  "iteration": 19,
+  "timestamp": "2025-11-04T09:42:53.772Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 399,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 399
+  }
+},
+{
+  "iteration": 20,
+  "timestamp": "2025-11-04T09:47:43.985Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 2250,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 2250
+  }
+},
+{
+  "iteration": 21,
+  "timestamp": "2025-11-04T09:52:32.427Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 436,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 436
+  }
+},
+{
+  "iteration": 22,
+  "timestamp": "2025-11-04T09:57:21.992Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1564,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1564
+  }
+},
+{
+  "iteration": 23,
+  "timestamp": "2025-11-04T10:02:10.493Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 499,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 499
+  }
+},
+{
+  "iteration": 24,
+  "timestamp": "2025-11-04T10:07:00.045Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1549,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1549
+  }
+},
+{
+  "iteration": 25,
+  "timestamp": "2025-11-04T10:11:48.461Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 414,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 414
+  }
+},
+{
+  "iteration": 26,
+  "timestamp": "2025-11-04T10:16:37.640Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1176,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1176
+  }
+},
+{
+  "iteration": 27,
+  "timestamp": "2025-11-04T10:21:29.291Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 3649,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 3649
+  }
+},
+{
+  "iteration": 28,
+  "timestamp": "2025-11-04T10:26:18.861Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1531,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1531
+  }
+},
+{
+  "iteration": 29,
+  "timestamp": "2025-11-04T10:31:07.479Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 612,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 612
+  }
+},
+{
+  "iteration": 30,
+  "timestamp": "2025-11-04T10:35:57.283Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1800,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1800
+  }
+},
+{
+  "iteration": 31,
+  "timestamp": "2025-11-04T10:40:45.798Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 510,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 510
+  }
+},
+{
+  "iteration": 32,
+  "timestamp": "2025-11-04T10:45:35.593Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1791,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1791
+  }
+},
+{
+  "iteration": 33,
+  "timestamp": "2025-11-04T10:50:24.081Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 482,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 482
+  }
+},
+{
+  "iteration": 34,
+  "timestamp": "2025-11-04T10:55:13.789Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1703,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1703
+  }
+},
+{
+  "iteration": 35,
+  "timestamp": "2025-11-04T11:00:02.276Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 496,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 496
+  }
+},
+{
+  "iteration": 36,
+  "timestamp": "2025-11-04T11:04:51.949Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1668,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1668
+  }
+},
+{
+  "iteration": 37,
+  "timestamp": "2025-11-04T11:09:40.379Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 427,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 427
+  }
+},
+{
+  "iteration": 38,
+  "timestamp": "2025-11-04T11:14:30.015Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1634,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1634
+  }
+},
+{
+  "iteration": 39,
+  "timestamp": "2025-11-04T11:19:18.729Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 709,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 709
+  }
+},
+{
+  "iteration": 40,
+  "timestamp": "2025-11-04T11:24:08.331Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1599,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1599
+  }
+},
+{
+  "iteration": 41,
+  "timestamp": "2025-11-04T11:28:56.795Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 466,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 466
+  }
+},
+{
+  "iteration": 42,
+  "timestamp": "2025-11-04T11:33:46.617Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1820,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1820
+  }
+},
+{
+  "iteration": 43,
+  "timestamp": "2025-11-04T11:38:35.103Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 481,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 481
+  }
+},
+{
+  "iteration": 44,
+  "timestamp": "2025-11-04T11:43:24.799Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1693,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1692
+  }
+},
+{
+  "iteration": 45,
+  "timestamp": "2025-11-04T11:48:13.285Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 484,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 484
+  }
+},
+{
+  "iteration": 46,
+  "timestamp": "2025-11-04T11:53:03.145Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1855,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1855
+  }
+},
+{
+  "iteration": 47,
+  "timestamp": "2025-11-04T11:57:51.581Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 432,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 432
+  }
+},
+{
+  "iteration": 48,
+  "timestamp": "2025-11-04T12:02:41.159Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1576,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1576
+  }
+},
+{
+  "iteration": 49,
+  "timestamp": "2025-11-04T12:07:29.606Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 432,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 432
+  }
+},
+{
+  "iteration": 50,
+  "timestamp": "2025-11-04T12:12:19.250Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1639,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1639
+  }
+},
+{
+  "iteration": 51,
+  "timestamp": "2025-11-04T12:17:07.663Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 409,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 409
+  }
+},
+{
+  "iteration": 52,
+  "timestamp": "2025-11-04T12:21:58.733Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 3066,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 3066
+  }
+},
+{
+  "iteration": 53,
+  "timestamp": "2025-11-04T12:26:47.160Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 424,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 424
+  }
+},
+{
+  "iteration": 54,
+  "timestamp": "2025-11-04T12:31:39.796Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 4631,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 4631
+  }
+},
+{
+  "iteration": 55,
+  "timestamp": "2025-11-04T12:36:28.351Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 554,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 554
+  }
+},
+{
+  "iteration": 56,
+  "timestamp": "2025-11-04T12:41:18.052Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1697,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1697
+  }
+},
+{
+  "iteration": 57,
+  "timestamp": "2025-11-04T12:46:06.480Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 422,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 422
+  }
+},
+{
+  "iteration": 58,
+  "timestamp": "2025-11-04T12:50:55.988Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1502,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1502
+  }
+},
+{
+  "iteration": 59,
+  "timestamp": "2025-11-04T12:55:44.424Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 432,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 432
+  }
+},
+{
+  "iteration": 60,
+  "timestamp": "2025-11-04T13:00:49.252Z",
+  "testsRun": 5,
+  "testsPassed": 4,
+  "testsFailed": 1,
+  "successRate": 80,
+  "duration": 16822,
+  "errors": [
+    "Slow response time: 16822ms"
+  ],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 16822
+  }
+},
+{
+  "iteration": 61,
+  "timestamp": "2025-11-04T13:05:37.676Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 421,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 421
+  }
+},
+{
+  "iteration": 62,
+  "timestamp": "2025-11-04T13:10:27.328Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1670,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1670
+  }
+},
+{
+  "iteration": 63,
+  "timestamp": "2025-11-04T13:15:15.853Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 525,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 525
+  }
+},
+{
+  "iteration": 64,
+  "timestamp": "2025-11-04T13:20:05.541Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1688,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1688
+  }
+},
+{
+  "iteration": 65,
+  "timestamp": "2025-11-04T13:24:54.044Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 502,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 502
+  }
+},
+{
+  "iteration": 66,
+  "timestamp": "2025-11-04T13:29:43.707Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1663,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1663
+  }
+},
+{
+  "iteration": 67,
+  "timestamp": "2025-11-04T13:34:32.266Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 559,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 559
+  }
+},
+{
+  "iteration": 68,
+  "timestamp": "2025-11-04T13:39:21.941Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1675,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1675
+  }
+},
+{
+  "iteration": 69,
+  "timestamp": "2025-11-04T13:44:10.359Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 416,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 416
+  }
+},
+{
+  "iteration": 70,
+  "timestamp": "2025-11-04T13:49:00.100Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1728,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1728
+  }
+},
+{
+  "iteration": 71,
+  "timestamp": "2025-11-04T13:53:48.551Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 449,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 449
+  }
+},
+{
+  "iteration": 72,
+  "timestamp": "2025-11-04T13:58:38.166Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1612,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1612
+  }
+},
+{
+  "iteration": 73,
+  "timestamp": "2025-11-04T14:03:26.632Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 463,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 463
+  }
+},
+{
+  "iteration": 74,
+  "timestamp": "2025-11-04T14:08:16.267Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1632,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1632
+  }
+},
+{
+  "iteration": 75,
+  "timestamp": "2025-11-04T14:13:04.682Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 412,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 412
+  }
+},
+{
+  "iteration": 76,
+  "timestamp": "2025-11-04T14:17:54.331Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1648,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1648
+  }
+},
+{
+  "iteration": 77,
+  "timestamp": "2025-11-04T14:22:42.740Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 401,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 401
+  }
+},
+{
+  "iteration": 78,
+  "timestamp": "2025-11-04T14:27:32.330Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1587,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1587
+  }
+},
+{
+  "iteration": 79,
+  "timestamp": "2025-11-04T14:32:20.758Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 425,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 425
+  }
+},
+{
+  "iteration": 80,
+  "timestamp": "2025-11-04T14:37:10.463Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1704,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1704
+  }
+},
+{
+  "iteration": 81,
+  "timestamp": "2025-11-04T14:41:58.951Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 486,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 486
+  }
+},
+{
+  "iteration": 82,
+  "timestamp": "2025-11-04T14:46:51.652Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 4696,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 4696
+  }
+},
+{
+  "iteration": 83,
+  "timestamp": "2025-11-04T14:51:40.157Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 504,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 504
+  }
+},
+{
+  "iteration": 84,
+  "timestamp": "2025-11-04T14:56:29.763Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1603,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1603
+  }
+},
+{
+  "iteration": 85,
+  "timestamp": "2025-11-04T15:01:18.211Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 445,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 445
+  }
+},
+{
+  "iteration": 86,
+  "timestamp": "2025-11-04T15:06:07.886Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1673,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1673
+  }
+},
+{
+  "iteration": 87,
+  "timestamp": "2025-11-04T15:10:56.302Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 415,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 415
+  }
+},
+{
+  "iteration": 88,
+  "timestamp": "2025-11-04T15:15:45.962Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1648,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1648
+  }
+},
+{
+  "iteration": 89,
+  "timestamp": "2025-11-04T15:20:34.514Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 549,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 549
+  }
+},
+{
+  "iteration": 90,
+  "timestamp": "2025-11-04T15:25:24.230Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1713,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1713
+  }
+},
+{
+  "iteration": 91,
+  "timestamp": "2025-11-04T15:30:12.656Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 425,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 425
+  }
+},
+{
+  "iteration": 92,
+  "timestamp": "2025-11-04T15:35:02.323Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1664,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1664
+  }
+},
+{
+  "iteration": 93,
+  "timestamp": "2025-11-04T15:39:50.889Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 562,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 562
+  }
+},
+{
+  "iteration": 94,
+  "timestamp": "2025-11-04T15:44:40.569Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1677,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1677
+  }
+},
+{
+  "iteration": 95,
+  "timestamp": "2025-11-04T15:49:29.160Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 589,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 589
+  }
+},
+{
+  "iteration": 96,
+  "timestamp": "2025-11-04T15:54:18.875Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1736,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1736
+  }
+},
+{
+  "iteration": 97,
+  "timestamp": "2025-11-04T15:59:07.280Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 406,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 406
+  }
+},
+{
+  "iteration": 98,
+  "timestamp": "2025-11-04T16:03:56.972Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1692,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1692
+  }
+},
+{
+  "iteration": 99,
+  "timestamp": "2025-11-04T16:08:45.490Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 517,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 517
+  }
+},
+{
+  "iteration": 100,
+  "timestamp": "2025-11-04T16:13:35.131Z",
+  "testsRun": 5,
+  "testsPassed": 5,
+  "testsFailed": 0,
+  "successRate": 100,
+  "duration": 1640,
+  "errors": [],
+  "details": {
+    "models": {
+      "count": 68,
+      "providers": [
+        "Anthropic",
+        "OpenAI",
+        "Google",
+        "Meta",
+        "DeepSeek",
+        "xAI",
+        "Alibaba",
+        "Moonshot",
+        "Mistral",
+        "ZAI",
+        "StabilityAI",
+        "KlingAI",
+        "BlackForestLabs",
+        "LumaLabs"
+      ]
+    },
+    "responseTime": 1640
+  }
+}
+]

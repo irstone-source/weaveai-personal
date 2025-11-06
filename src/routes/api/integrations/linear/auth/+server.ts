@@ -34,7 +34,8 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 	}
 
 	// Ensure user is authenticated
-	if (!locals.user) {
+	const session = await locals.auth();
+	if (!session?.user?.id) {
 		throw redirect(302, '/login?redirect=/api/integrations/linear/auth');
 	}
 
@@ -59,7 +60,7 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 
 		// Check if integration already exists
 		const existing = await db.query.linearIntegrations.findFirst({
-			where: (integrations, { eq }) => eq(integrations.userId, locals.user.id)
+			where: (integrations, { eq }) => eq(integrations.userId, session.user.id as string)
 		});
 
 		if (existing) {
@@ -77,7 +78,7 @@ export const GET: RequestHandler = async ({ url, locals }) => {
 		} else {
 			// Create new integration
 			await db.insert(linearIntegrations).values({
-				userId: locals.user.id,
+				userId: session.user.id as string,
 				accessToken: tokenResponse.access_token,
 				teamId: primaryTeam.id,
 				teamName: primaryTeam.name,

@@ -19,7 +19,7 @@
 <div
 	class={cn(
 		'relative w-full rounded-lg border p-4',
-		variantStyles[variant],
+		variantStyles[variant ?? 'default'],
 		className
 	)}
 	role="alert"

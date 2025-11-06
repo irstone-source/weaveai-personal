@@ -12,14 +12,15 @@ import { eq } from 'drizzle-orm';
 
 export const POST: RequestHandler = async ({ locals }) => {
 	// Ensure user is authenticated
-	if (!locals.user) {
+	const session = await locals.auth();
+	if (!session?.user?.id) {
 		throw error(401, 'Unauthorized');
 	}
 
 	try {
 		// Get Linear integration for user
 		const integration = await db.query.linearIntegrations.findFirst({
-			where: eq(linearIntegrations.userId, locals.user.id)
+			where: eq(linearIntegrations.userId, session.user.id as string)
 		});
 
 		if (!integration) {
@@ -43,7 +44,7 @@ export const POST: RequestHandler = async ({ locals }) => {
 					try {
 						// Map Linear data to our schema
 						const projectData = {
-							userId: locals.user.id,
+							userId: session.user.id as string,
 							externalId: issue.id,
 							externalSource: 'linear',
 							title: issue.title,
@@ -60,7 +61,7 @@ export const POST: RequestHandler = async ({ locals }) => {
 							where: (projects, { and, eq }) =>
 								and(
 									eq(projects.externalId, issue.id),
-									eq(projects.userId, locals.user.id)
+									eq(projects.userId, session.user.id as string)
 								)
 						});
 

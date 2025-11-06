@@ -820,7 +820,7 @@ export const meetingInsights = pgTable("meeting_insights", {
 		.notNull()
 		.references(() => meetings.id, { onDelete: "cascade" }),
 	insightType: text("insightType", {
-		enum: ["decision", "action_item", "risk", "opportunity", "requirement", "feedback", "commitment", "question"]
+		enum: ["decision", "action_item", "risk", "opportunity", "requirement", "feedback", "commitment", "question", "summary", "key_point"]
 	}).notNull(),
 	content: text("content").notNull(),
 	speaker: text("speaker"), // Who said it

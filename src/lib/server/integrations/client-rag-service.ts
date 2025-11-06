@@ -242,7 +242,7 @@ export class ClientRAGService {
 		try {
 			// Find client profile
 			const client = await db.query.clientProfiles.findFirst({
-				where: eq(clientProfiles.primaryEmail, clientEmail)
+				where: eq(clientProfiles.clientEmail, clientEmail)
 			});
 
 			if (!client) {
